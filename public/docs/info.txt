@@ -1,0 +1,37 @@
+Tables in database
+------------------
+
+User
+- id
+- username               (varchart)
+- password               [password bcrypt]
+- firstname              (varchart)
+- lastname               (varchart)
+- avatar                 (varchart)
+- about                  (varchart)
+- role (user-admin)      (varchart)
+- email                  (varchart)
+- stats                  (JSON)
+
+Questions
+- id
+- subject                (varchart)
+- subsubject             (varchart)
+- questionid            (varchart)
+- questionvalue          (number)
+- questioncontent              (varchart)
+- images                 (JSON)
+- correctanswer          (varchart)
+- aanswer               (varchart)
+- aexplanation          (varchart)
+- banswer               (varchart)
+- bexplanation          (varchart)
+- canswer               (varchart)
+- cexplanation          (varchart)
+
+Answers (User->Questions | One to many)
+- Id
+- Username
+- QuestionId
+- CorrectAnswer
+- IncorrectAnswer
